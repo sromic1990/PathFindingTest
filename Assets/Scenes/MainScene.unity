@@ -854,7 +854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2be48e1293d594489eb3cea319a802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnlyDrawPath: 1
+  OnlyDrawPath: 0
+  Mode: 1
   UnwalkableLayer:
     serializedVersion: 2
     m_Bits: 256
