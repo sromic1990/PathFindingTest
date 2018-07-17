@@ -10,7 +10,8 @@ namespace Sourav.Utilities.Scripts.Algorithms.AStarPathfinding
     {
         public bool ShowHelperGizmos;
         public bool OnlyDrawPath;
-        public Mode Mode; 
+        public Mode Mode;
+        public bool AllowDiagonalMovement;
 
         public LayerMask UnwalkableLayer;
         public Vector2 GridWorldSize;
@@ -103,6 +104,12 @@ namespace Sourav.Utilities.Scripts.Algorithms.AStarPathfinding
                 {
                     if (x == 0 && y == 0)
                         continue;
+
+                    if(!AllowDiagonalMovement)
+                    {
+                        if (x == -1 && y == 1 || x == 1 && y == 1 || x == -1 && y == -1 || x == 1 && y == -1)
+                            continue;
+                    }
 
                     int checkX = node.GridX + x;
                     int checkY = node.GridY + y;

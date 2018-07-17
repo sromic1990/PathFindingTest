@@ -19491,6 +19491,7 @@ MonoBehaviour:
   ShowHelperGizmos: 0
   OnlyDrawPath: 1
   Mode: 0
+  AllowDiagonalMovement: 0
   UnwalkableLayer:
     serializedVersion: 2
     m_Bits: 256
