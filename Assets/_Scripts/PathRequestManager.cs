@@ -36,6 +36,11 @@ public class PathRequestManager : MonoBehaviour
             isProcessingPath = true;
             pathfinding.StartFindPath(CurrentPathRequest.PathStart, CurrentPathRequest.PathEnd);
         }
+        else
+        {
+            if (PathRequestQueue.Count == 0)
+                Debug.Log("PathRequestQueue.Count");
+        }
     }
 
     public void FinishedProcessingPath(Vector3[]Path, bool Success)

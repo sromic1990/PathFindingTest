@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sourav.Utilities.Scripts.Attributes;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,12 @@ public class Unit : MonoBehaviour
     private Coroutine FollowPathCoroutine;
 
     void Start()
+    {
+        FindPath();
+    }
+
+    [Button()]
+    public void FindPath()
     {
         PathRequestManager.Instance.RequestPath(transform.position, Target.position, OnPathFound);
     }
