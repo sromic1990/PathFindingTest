@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Sourav.Utilities.Scripts.Algoritms.Randomization
+namespace Sourav.Utilities.Scripts.Algorithms.Randomization
 {
     public class RandomizationDither
     {
