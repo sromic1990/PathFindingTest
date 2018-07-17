@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Grid : MonoBehaviour
 {
+    public bool ShowHelperGizmos;
     public bool OnlyDrawPath;
     public Mode Mode; 
 
@@ -117,6 +118,9 @@ public class Grid : MonoBehaviour
     public List<Node> Path;
     private void OnDrawGizmos()
     {
+        if (!ShowHelperGizmos)
+            return;
+
         Gizmos.color = Color.black;
         if(Mode == Mode.ThreeDimensonal)
         {

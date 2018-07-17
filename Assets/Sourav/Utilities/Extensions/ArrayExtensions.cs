@@ -36,6 +36,20 @@ namespace Sourav.Utilities.Extensions
 
             return list;
         }
+
+        public static T[] Reverse<T>(this T[] array)
+        {
+            T[] reversedArray = new T[array.Length];
+
+            int revCount = array.Length - 1;
+            for (int i = 0; i < array.Length; i++)
+            {
+                reversedArray[i] = array[revCount];
+                revCount--;
+            }
+
+            return reversedArray;
+        }
     }
     
 }

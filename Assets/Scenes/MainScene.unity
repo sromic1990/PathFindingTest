@@ -752,6 +752,7 @@ GameObject:
   - component: {fileID: 1559929693}
   - component: {fileID: 1559929692}
   - component: {fileID: 1559929691}
+  - component: {fileID: 1559929695}
   m_Layer: 0
   m_Name: Seeker
   m_TagString: Untagged
@@ -826,6 +827,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559929695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1559929690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8149f24520b6ead4b8fb8f6a7a06499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 42660508}
 --- !u!1 &1725818101
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +849,7 @@ GameObject:
   - component: {fileID: 1725818103}
   - component: {fileID: 1725818102}
   - component: {fileID: 1725818104}
+  - component: {fileID: 1725818105}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -854,7 +868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2be48e1293d594489eb3cea319a802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnlyDrawPath: 0
+  OnlyDrawPath: 1
   Mode: 1
   UnwalkableLayer:
     serializedVersion: 2
@@ -885,8 +899,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f54c409aba8fbf429a81abe3ba3538a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Seeker: {fileID: 1559929694}
-  Target: {fileID: 42660508}
+--- !u!114 &1725818105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1725818101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f7d3d9940a75f54292a5c39a31f30d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2004667543
 Prefab:
   m_ObjectHideFlags: 0
